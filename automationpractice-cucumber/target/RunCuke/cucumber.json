@@ -1,0 +1,701 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5940224800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "verify I Should Add Product To The Cart Successfully",
+        "description": "",
+        "id": "i-should-verify-women-category-page-functionality;verify-i-should-add-product-to-the-cart-successfully;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 965155800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2451266700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on women category",
+            "match": {
+              "location": "WomenCategoryStep.iClickOnWomenCategory()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1396340500,
+              "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document\n  (Session info: chrome\u003d96.0.4664.93)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027LAPTOP-AV86AHVK\u0027, ip: \u0027172.17.192.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_121\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [13e0bfd29ed33bb7ddba60258288b4af, getElementAttribute {id\u003de49888e2-7af8-47ac-b6e2-ed1be57b7f73, name\u003dtitle}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\\Users\\patel\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52498}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52498/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on WINDOWS (13e0bfd29ed33bb7ddba60258288b4af)] -\u003e xpath: //ul[@class\u003d\u0027product_list grid row\u0027]//li//div//div//div//a//img]\nSession ID: 13e0bfd29ed33bb7ddba60258288b4af\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:152)\r\n\tat com.automationpractice.pages.ProductPage.selectProduct(ProductPage.java:43)\r\n\tat com.automationpractice.steps.WomenCategoryStep.iClickOnTheProduct(WomenCategoryStep.java:45)\r\n\tat ✽.When I click on the product \"Blouse\"(womencategorypagetest.feature:10)\r\n",
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "I click on the product \"Blouse\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Blouse",
+                  "offset": 24
+                }
+              ],
+              "location": "WomenCategoryStep.iClickOnTheProduct(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "I change quantity \"2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 19
+                }
+              ],
+              "location": "WomenCategoryStep.iChangeQuantity(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "I Select the size \"M\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "M",
+                  "offset": 19
+                }
+              ],
+              "location": "WomenCategoryStep.iSelectTheSize(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "I select the colour\"White\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "White",
+                  "offset": 20
+                }
+              ],
+              "location": "WomenCategoryStep.iSelectTheColour(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "I click on add to cart button",
+            "match": {
+              "location": "WomenCategoryStep.iClickOnAddToCartButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "I verify the product added message \"Product successfully added to your shopping cart\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Product successfully added to your shopping cart",
+                  "offset": 36
+                }
+              ],
+              "location": "WomenCategoryStep.iVerifyTheProductAddedMessage(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "I close the popup",
+            "match": {
+              "location": "WomenCategoryStep.iCloseThePopup()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5113053900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "verify I Should Add Product To The Cart Successfully",
+        "description": "",
+        "id": "i-should-verify-women-category-page-functionality;verify-i-should-add-product-to-the-cart-successfully;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1329368800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2823705100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on women category",
+            "match": {
+              "location": "WomenCategoryStep.iClickOnWomenCategory()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1156982200,
+              "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document\n  (Session info: chrome\u003d96.0.4664.93)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027LAPTOP-AV86AHVK\u0027, ip: \u0027172.17.192.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_121\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [6201068118390dfafb92f538e1add9d0, getElementAttribute {id\u003d8f0bc5b5-ddb9-47ff-ab48-08abf438e5fa, name\u003dtitle}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\\Users\\patel\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52531}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52531/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on WINDOWS (6201068118390dfafb92f538e1add9d0)] -\u003e xpath: //ul[@class\u003d\u0027product_list grid row\u0027]//li//div//div//div//a//img]\nSession ID: 6201068118390dfafb92f538e1add9d0\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:152)\r\n\tat com.automationpractice.pages.ProductPage.selectProduct(ProductPage.java:43)\r\n\tat com.automationpractice.steps.WomenCategoryStep.iClickOnTheProduct(WomenCategoryStep.java:45)\r\n\tat ✽.When I click on the product \"Printed Dress\"(womencategorypagetest.feature:10)\r\n",
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "I click on the product \"Printed Dress\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Printed Dress",
+                  "offset": 24
+                }
+              ],
+              "location": "WomenCategoryStep.iClickOnTheProduct(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "I change quantity \"3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 19
+                }
+              ],
+              "location": "WomenCategoryStep.iChangeQuantity(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "I Select the size \"L\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "L",
+                  "offset": 19
+                }
+              ],
+              "location": "WomenCategoryStep.iSelectTheSize(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "I select the colour\"Orange\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Orange",
+                  "offset": 20
+                }
+              ],
+              "location": "WomenCategoryStep.iSelectTheColour(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "I click on add to cart button",
+            "match": {
+              "location": "WomenCategoryStep.iClickOnAddToCartButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "I verify the product added message \"Product successfully added to your shopping cart\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Product successfully added to your shopping cart",
+                  "offset": 36
+                }
+              ],
+              "location": "WomenCategoryStep.iVerifyTheProductAddedMessage(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "I close the popup",
+            "match": {
+              "location": "WomenCategoryStep.iCloseThePopup()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4751400100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "verify I Should Add Product To The Cart Successfully",
+        "description": "",
+        "id": "i-should-verify-women-category-page-functionality;verify-i-should-add-product-to-the-cart-successfully;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 678958300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2341768700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on women category",
+            "match": {
+              "location": "WomenCategoryStep.iClickOnWomenCategory()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1351336500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on the product \"Printed Chiffon Dress\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Printed Chiffon Dress",
+                  "offset": 24
+                }
+              ],
+              "location": "WomenCategoryStep.iClickOnTheProduct(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 106763300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I change quantity \"4\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 19
+                }
+              ],
+              "location": "WomenCategoryStep.iChangeQuantity(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 61036400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I Select the size \"S\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "S",
+                  "offset": 19
+                }
+              ],
+              "location": "WomenCategoryStep.iSelectTheSize(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 142116700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I select the colour\"Green\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Green",
+                  "offset": 20
+                }
+              ],
+              "location": "WomenCategoryStep.iSelectTheColour(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1096038500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I click on add to cart button",
+            "match": {
+              "location": "WomenCategoryStep.iClickOnAddToCartButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 21101034800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I verify the product added message \"Product successfully added to your shopping cart\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Product successfully added to your shopping cart",
+                  "offset": 36
+                }
+              ],
+              "location": "WomenCategoryStep.iVerifyTheProductAddedMessage(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 55792100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I close the popup",
+            "match": {
+              "location": "WomenCategoryStep.iCloseThePopup()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5179558100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "verify I Should Add Product To The Cart Successfully",
+        "description": "",
+        "id": "i-should-verify-women-category-page-functionality;verify-i-should-add-product-to-the-cart-successfully;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 1015897200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2364506500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on women category",
+            "match": {
+              "location": "WomenCategoryStep.iClickOnWomenCategory()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1906525400,
+              "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document\n  (Session info: chrome\u003d96.0.4664.93)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027LAPTOP-AV86AHVK\u0027, ip: \u0027172.17.192.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_121\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [7aace274f5e4817e8cb5019beedcbc52, getElementAttribute {id\u003d2ac4d3b6-7a31-45a4-91cc-3e6ab5c16d5e, name\u003dtitle}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\\Users\\patel\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52607}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52607/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on WINDOWS (7aace274f5e4817e8cb5019beedcbc52)] -\u003e xpath: //ul[@class\u003d\u0027product_list grid row\u0027]//li//div//div//div//a//img]\nSession ID: 7aace274f5e4817e8cb5019beedcbc52\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:152)\r\n\tat com.automationpractice.pages.ProductPage.selectProduct(ProductPage.java:43)\r\n\tat com.automationpractice.steps.WomenCategoryStep.iClickOnTheProduct(WomenCategoryStep.java:45)\r\n\tat ✽.When I click on the product \"Printed Summer Dress\"(womencategorypagetest.feature:10)\r\n",
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "I click on the product \"Printed Summer Dress\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Printed Summer Dress",
+                  "offset": 24
+                }
+              ],
+              "location": "WomenCategoryStep.iClickOnTheProduct(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "I change quantity \"2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 19
+                }
+              ],
+              "location": "WomenCategoryStep.iChangeQuantity(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "I Select the size \"M\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "M",
+                  "offset": 19
+                }
+              ],
+              "location": "WomenCategoryStep.iSelectTheSize(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "I select the colour\"Blue\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Blue",
+                  "offset": 20
+                }
+              ],
+              "location": "WomenCategoryStep.iSelectTheColour(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "I click on add to cart button",
+            "match": {
+              "location": "WomenCategoryStep.iClickOnAddToCartButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "I verify the product added message \"Product successfully added to your shopping cart\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Product successfully added to your shopping cart",
+                  "offset": 36
+                }
+              ],
+              "location": "WomenCategoryStep.iVerifyTheProductAddedMessage(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "I close the popup",
+            "match": {
+              "location": "WomenCategoryStep.iCloseThePopup()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@Sanity"
+          }
+        ]
+      }
+    ],
+    "name": "I should verify women category page functionality",
+    "description": "",
+    "id": "i-should-verify-women-category-page-functionality",
+    "keyword": "Feature",
+    "uri": "womencategorypagetest.feature"
+  }
+]
